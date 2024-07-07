@@ -1,0 +1,40 @@
+body {
+ background: url("../img/خلفيه.jpg");    
+ background-size: cover;
+ background-repeat: no-repeat;
+
+}
+.vidalogo{
+    
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(164 163 163 / 50%);
+
+}
+.overlay h2{
+    font-size: 74px;
+    animation: customAni 5s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal none;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 40px;
+    -webkit-text-stroke: #1C2834 1px;
+}
+
+@keyframes customAni {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
