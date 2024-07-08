@@ -1,0 +1,18 @@
+
+.herosection{
+    background-image: url(../img/خلفيه.jpg);
+    height: 91vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.herosection .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 91vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
+}
