@@ -1,0 +1,49 @@
+.desktop_7 * { font-family: Nunito, sans-serif; }
+
+.desktop_7 .text-blk { margin: 0; padding: 10px; line-height: 25px; }
+
+.desktop_7 .responsive-container-block { min-height: 75px; height: fit-content; width: 100%; padding: 10px; display: flex; flex-wrap: wrap; margin: 0 auto; justify-content: flex-start; }
+
+.desktop_7 .responsive-container-block.bigContainer { padding: 10px 30px; }
+
+.desktop_7 .responsive-container-block.Container { max-width: 980px; flex-direction: column; padding: 10px 0; margin: 80px auto 50px; }
+
+.desktop_7 .text-blk.headingText { font-size: 36px; line-height: 50px; font-weight: 900; }
+
+.desktop_7 .text-blk.active { font-size: 20px; line-height: 34px; font-weight: 400; border-bottom: 2px solid #03a9f4; }
+
+.desktop_7 .text-blk.list { font-size: 20px; line-height: 34px; cursor: pointer; margin: 0 20px 0 0; padding: 10px 15px; }
+
+.desktop_7 .text-blk.list.active { padding: 10px 15px; }
+
+.desktop_7 .squareImg { border-radius: 6px; width: 225px; height: 225px; margin: 0 auto 20px; }
+
+.desktop_7 .responsive-container-block.imageContainer { flex-direction: row; align-items:center; justify-content: center; flex-wrap: wrap; padding: 10px 0; }
+
+.desktop_7 .responsive-container-block.optionsContainer { margin: 0 0 10px; min-height: auto; }
+
+.desktop_7 .project { margin: 0 0 20px; padding: 0; }
+
+.desktop_7 button, .desktop_7 img { cursor: pointer; }
+
+.desktop_7 img:hover { transform: scale(1.02); transition: all 0.5s ease-in-out; }
+
+.desktop_7 .hdImg { display: none; }
+
+
+.desktop_7 .btn-box { 
+  position: absolute; 
+  top: 50%; left: 50%; 
+  transform: translate(-50%, -50%); 
+  display: none; }
+
+.desktop_7 .project:hover .btn-box { display: block; }
+
+.desktop_7 .imageContainer { background-color: white; position: relative; display: flex; flex-wrap: wrap; flex-direction: column; }
+
+.desktop_7 .project { position: relative; }
+
+.desktop_7 .overlay { position: fixed; background-color: rgba(71, 69, 69, 0.7); height: 100%; width: 100%; max-height: 100%; top: 0; left: 0; z-index: 100; display: none; }
+
+.desktop_7 .overlay-inner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+}
