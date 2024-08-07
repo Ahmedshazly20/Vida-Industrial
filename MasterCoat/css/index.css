@@ -1,0 +1,167 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.herosection{
+    background-image: url(../img/hero\ \(1\).jpeg);
+    height: 91vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.herosection .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 91vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
+}
+
+/* Start Who We Are? section  */
+.Who p{
+    font-family: "Roboto", sans-serif;
+    color: #000000c7;
+    line-height: 1.8;
+}
+.Who h2{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+/* end Who We Are? section  */
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+  /* start Aboutus  */
+  .Aboutus{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+  }
+  .Aboutus .paragraph p {
+    margin-top: 18px;
+   line-height: 1.5;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    
+  }
+  /* end Aboutus  */
+
+
+  /* start soluation  */
+  .soluation{ 
+     background-color:rgb(241 245 249);
+    margin-bottom: 30px;}
+
+    .soluation h2{
+      font-weight:600;
+      font-size: 65px;
+    }
+    .soluation ul li{
+      font-size: 34px;
+      font-weight: 700;
+      transition: 0.5s;
+      padding: 25px 90px;
+      font-family: "Roboto", sans-serif;
+      border: 4px hsla(242, 88.4%, 66.3%, 0.5) solid;
+      border-radius: 6px;
+    }
+    .soluation ul li:hover{
+      background-color: rgb(78, 74, 216);
+      color: rgba(255, 255, 255, 0.838);
+    }
+    .soluation svg{
+      font-size: 7rem;
+      margin-top: 3rem;
+      color: #792289c7;
+    }
+
+  /* end soluation  */
+
+
+  /* start senglie section  */
+
+  /* section one  floors */
+  .senglie .floors h2{
+    font-weight:600;
+    font-size: 65px;
+  }
+  .senglie .floors .words ul li {
+    font-weight: 500;
+    font-size: 25px;
+    border: 2px solid #625df5a3;
+    border-radius: 5px;
+    padding: 6px 2px;
+    color: #14120fb8;
+    font-family: "Roboto", sans-serif;
+  }
+  .senglie .floors .imges li{
+  
+    border: 3px solid #01204e3b;
+    font-size: 22px;
+    border-radius: 6px;
+    color: #4e4ad8;
+    padding: 6px;}
+    .senglie .floors .imges  li img{
+      width: 100%;
+    }
+     /* section tow  walls */
+    .senglie .walls h2{
+      font-weight:600;
+      font-size: 65px;
+    }
+    .senglie .walls .words ul li {
+      font-weight: 500;
+      font-size: 25px;
+      border: 2px solid #625df5a3;
+      border-radius: 5px;
+      padding: 6px 2px;
+      color: #14120fb8;
+      font-family: "Roboto", sans-serif;
+    }
+    .senglie .walls .imges li{
+    
+      border: 3px solid #01204e3b;
+      font-size: 22px;
+      border-radius: 6px;
+      color: #4e4ad8;
+      padding: 6px;}
+      .senglie .walls .imges  li img{
+        width: 100%;
+      }
+
+        /* section three  Roof */
+        .senglie .Roof h2{
+          font-weight:600;
+          font-size: 65px;
+        }
+        .senglie .Roof .words ul li {
+          font-weight: 500;
+          font-size: 25px;
+          border: 2px solid #625df5a3;
+          border-radius: 5px;
+          padding: 6px 2px;
+          color: #14120fb8;
+          font-family: "Roboto", sans-serif;
+        }
+        .senglie .Roof .imges li{
+        
+          border: 3px solid #01204e3b;
+          font-size: 22px;
+          border-radius: 6px;
+          color: #4e4ad8;
+          padding: 6px;}
+          .senglie .Roof .imges  li img{
+            width: 100%;
+          }
+    
+  /* end senglie section  */
