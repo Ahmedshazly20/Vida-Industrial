@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/imgslyder.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>VIDA INDUSTRIAL-</title>
+</head>
+<body>
+<!-- start nav section  -->
+
+  <nav class="bg-slate-300 navsection">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" id="toggleMenu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-8 w-auto" src="./img/logonew.png" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+            
+              <a href="../index.html" class="rounded-md bg-gray-300 px-3 py-2 text-sm font-medium text-gray-900" aria-current="page">Home</a>
+              <a href="./bareeq alenara/index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Bareeq elanara </a>
+
+              <a href="#Aboutus" class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Aboutus</a>
+              <a href="#Product" class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Product</a>
+              <a href="./MasterCoat/index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Vida Master Coat</a>
+            </div>
+          </div>
+        </div>
+        <div class=" rounded  py-[2px] absolute inset-y-0 right-0 flex items-center  sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button" hr class="border-solid border-2 border-[#00b2ff] px-[13px] relative rounded-full bg-gray-300 p-1 text-gray-500 hover:text-white hover:bg-gray-800 focus:outline-none  ">
+           <a href="#contact"> Contact US</a> 
+          </button>
+  
+        
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="./MasterCoat/index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Vida Master Coat</a>
+        <a href="./bareeq alenara/index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Bareeq elanara </a>
+        <a href="#Aboutus" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Aboutus</a>
+        <a href="#Product" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Product</a>
+      </div>
+    </div>
+  </nav>
+<!-- end nav section  -->
+
+<!-- start Hero section  -->
+<section class="herosection relative">
+  <div class="container mx-auto p-8">
+  <div class="overlay">
+   <div class="flex justify-center items-center flex-col">
+    <img src="./img/loho22.png" class="w-[35rem]" alt="" srcset="">
+      <h3 class="text-gray-200 text-[30px] font-semibold">Vida Industrial Company Factory</h3>
+      <p class="text-gray-200 text-[20px] ">Vida Manufacturing Industries Factory </p>
+    <div class="flex justify-center items-center"> 
+      <button type="button" class="mt-[20px]   border-solid border-2 border-[#00b2ff] px-[13px] relative rounded-full  p-1 text-gray-100 hover:text-white hover:bg-gray-800 focus:outline-none  ">
+        <a href="#contact"> Contact US</a> 
+      </button>
+    </div>
+   </div>
+    </div>
+  </div>
+  
+</section>
+<!-- end Hero section  -->
+<!-- Start Who We Are? section  -->
+<section class="mt-8 mb-9 bg-gray-100 Who" id="Aboutus">
+  <div class="container mx-auto p-8">
+    <div class="flex justify-center items-center text-center flex-col ">
+      <h2>Who We Are?</h2>
+      <p><span>Vida</span> Industrial Company was established in Dammam by a distinguished group of engineers, administrators, and technicians with extensive scientific and technical expertise who have left their mark on the local and international industrial markets. Vida boasts a wide product line accompanied by a variety of industrial departments, each offering exceptional performance, quality, and excellence. Among them are the wrought iron and metal formation department, the sheet and pipe laser cutting department, the metal coating and electroplating department, the metal casting department, and the resin department.
+        The foundational principles upon which our company was established include committing to innovation in performance and quality, fulfilling our customers’ vision and requirements in a unique and non-traditional manner, and leveraging our expertise to offer solutions and ideas that transform the clients’ desires into tangible realities. Furthermore, Vida places significant importance on providing after-sales services to uphold the integrity of its products and ensure the utmost customer satisfaction, peace of mind, and confidence in their future interactions with us
+        </p>
+    </div>
+  </div>
+</section>
+<!-- end Who We Are? section  -->
+
+<!-- Start  Gallery section  -->
+<section id="Product">
+  <div class="container mx-auto p-8">
+    <div class="desktop_7" unique-script-id="w-w-dm-id">
+      <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <p class="text-blk headingText">
+            Gallery
+          </p>
+          <div class="responsive-container-block optionsContainer">
+           
+            <p class="text-blk list active" data-filter="one">
+              Metal sheet accessories
+            </p>
+            <p class="text-blk list" data-filter="two">
+              Aluminum metal casting 
+            </p>
+            <p class="text-blk list" data-filter="three">
+              Laser cut decorative 
+            </p>
+            <p class="text-blk list" data-filter="four">
+              Option four
+            </p>
+           
+          </div>
+          <div class="responsive-container-block imageContainer flex justify-center items-center">
+            <div class=" grid md:grid-cols-4 gap-2 sm:grid-col-1 mainImg"> 
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/1.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/2.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/3.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/4.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/5.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/6.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/9.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+                 <div>
+                  <img class="squareImg two" src="./img/Products/Aluminum metal/7.jpg">   
+                  <div class="btn-box">
+                     <button class="btn">
+                       View
+                     </button>
+                  </div>
+                 </div>
+              
+              
+            </div>
+
+
+            <div class=" grid md:grid-cols-4 gap-2 sm:grid-col-1  mainImg">
+            
+                  <div>
+                    <img class="squareImg one" src="./img/Products/Metal sheet accessories/1.jpg">   
+                    <div class="btn-box">
+                      <button class="btn">
+                        View
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="squareImg one" src="./img/Products/Metal sheet accessories/2.jpg">   
+                    <div class="btn-box">
+                      <button class="btn">
+                        View
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="squareImg one" src="./img/Products/Metal sheet accessories/3.jpg">   
+                    <div class="btn-box">
+                      <button class="btn">
+                        View
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="squareImg one" src="./img/Products/Metal sheet accessories/4.jpg">   
+                    <div class="btn-box">
+                      <button class="btn">
+                        View
+                      </button>
+                    </div>
+                  </div>
+
+            </div>   
+            </div>
+            
+            <div class=" grid md:grid-cols-4 gap-2 sm:grid-col-1  mainImg">
+            
+              <div>
+                <img class="squareImg three" src="./img/Products/Laser cut decorative/1.jpg">   
+                <div class="btn-box">
+                  <button class="btn">
+                    View
+                  </button>
+                </div>
+              </div>
+              <div>
+                <img class="squareImg three" src="./img/Products/Laser cut decorative/2.jpg">   
+                <div class="btn-box">
+                  <button class="btn">
+                    View
+                  </button>
+                </div>
+              </div>
+              <div>
+                <img class="squareImg three" src="./img/Products/Laser cut decorative/3.jpg">   
+                <div class="btn-box">
+                  <button class="btn">
+                    View
+                  </button>
+                </div>
+              </div>
+              <div>
+                <img class="squareImg three" src="./img/Products/Laser cut decorative/4.jpg">   
+                <div class="btn-box">
+                  <button class="btn">
+                    View
+                  </button>
+                </div>
+              </div>
+
+        </div>   
+        </div>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end  Gallery section  -->
+<!-- start  Carousel section  -->
+  <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+  space-between="30" free-mode="true">
+  <swiper-slide><img src="./img/Products/DOOR/1.jpg" alt=""></swiper-slide>
+  <swiper-slide><img src="./img/Products/DOOR/2.jpg" alt=""></swiper-slide>
+  <swiper-slide><img src="./img/Products/DOOR/3.jpg" alt=""></swiper-slide>
+  <swiper-slide><img src="./img/Products/DOOR/4.jpg" alt=""></swiper-slide>
+  <swiper-slide><img src="./img/Products/DOOR/5.jpg" alt=""></swiper-slide>
+  <swiper-slide><img src="./img/Products/DOOR/6.jpg" alt=""></swiper-slide>
+  <swiper-slide><img src="./img/Products/DOOR/7.jpg" alt=""></swiper-slide>
+
+
+ 
+  </swiper-container>
+
+<!-- end  Carousel section  -->
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
+  <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+    <!-- Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div class="col-span-full lg:col-span-1">
+        <a class="flex-none text-xl font-semibold text-white" href="#" aria-label="Brand">
+          <img src="./img/loho22.png" alt="" srcset="">
+        </a>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-1">
+        <h4 class="font-semibold text-gray-100">Product</h4>
+
+        <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#Product">Product</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-1">
+        <h4 class="font-semibold text-gray-100">Company</h4>
+
+        <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#Aboutus">About us</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-2">
+        <h4 class="font-semibold text-gray-100">Stay up to date</h4>
+
+        <form id="contact">
+          <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-neutral-900">
+            <div class="w-full">
+              <label for="hero-input" class="sr-only">Search</label>
+              <h3 class="text-[22px] font-semibold  text-slate-500 ml-[10px]">Email@vida.com</h3>
+            </div>
+            <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+              E-mail
+            </a>
+          </div>
+          <p class="mt-3 text-sm text-gray-400">
+             Never spam.
+          </p>
+        </form>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+
+    <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+      <div class="flex justify-between items-center">
+        <p class="text-sm text-gray-400 dark:text-neutral-400">© 2024 Preline. All rights reserved.</p>
+      </div>
+      <!-- End Col -->
+
+      <!-- Social Brands -->
+      <div>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+          </svg>
+        </a>
+      </div>
+      <!-- End Social Brands -->
+    </div>
+  </div>
+</footer>
+<!-- ========== END FOOTER ========== -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script src="./js/index.js"></script>
+</body>
+</html>

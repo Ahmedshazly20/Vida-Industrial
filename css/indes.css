@@ -1,0 +1,7 @@
+body {
+    height: 3000px;
+}
+
+.vidaimg li img{
+    max-width: 20rem;
+}
